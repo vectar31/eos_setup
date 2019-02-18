@@ -72,3 +72,28 @@ Now we need to create account
 cleos create account eosio 'account_name' 'your public key'
 which will look something like this:
 cleos create account eosio piyush EOS7GyruBjZzetudfZYMoGyGKxpcRcBTQbiuxhqFsL7vP9uAgquqd
+
+
+
+Now write a smart contract hello.cpp by finding a sample contract here:
+
+https://developers.eos.io/eosio-home/docs/your-first-contract
+
+Generate wasm and abi :
+eosio-cpp -o hello.wasm hello.cpp --abigen
+
+Now publish contract:
+cleos set contract <dir> <absolue path>
+
+Example :
+cleos set contract hello /Users/piyushkumar/Desktop/eos-contracts/hello
+
+Now interact with the contract functions like this :
+
+cleos push action <account_name> <function_name> -p <account_name>@active
+
+Example : cleos push action hello hi '["piyush"]' -p hello@active
+
+
+
+
