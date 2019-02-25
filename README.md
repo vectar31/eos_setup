@@ -55,8 +55,13 @@ cleos wallet create --to-console -n 'name'
 
 Now we need to open the wallet :
 
-cleos wallet open 
+cleos wallet open
+
 cleos wallet open -n 'name'
+
+Unlock wallet : 
+
+cleos wallet unlock -n 'name'
 
 To see current wallets :
 cleos wallet list
