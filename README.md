@@ -76,11 +76,19 @@ cleos wallet create_key -n 'name'
 Keeps the keys
 
 Now we need to import eosio key
+
 cleos wallet import --private-key 5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3
+
 cleos wallet import --private-key 5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3 -n 'name'
 
+
+EOS PUBLIC KEY : EOS6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV
+
+
 Now we need to create account
+
 cleos create account eosio 'account_name' 'your public key'
+
 which will look something like this:
 cleos create account eosio piyush EOS7GyruBjZzetudfZYMoGyGKxpcRcBTQbiuxhqFsL7vP9uAgquqd
 
