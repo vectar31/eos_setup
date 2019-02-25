@@ -47,6 +47,7 @@ brew install eosio.cdt
 
 We need to create a wallet now:
 To create a default wallet : 
+
 cleos wallet create --to-console
 
 To create wallet with a different name :
@@ -67,7 +68,9 @@ To see current wallets :
 cleos wallet list
 
 Now we need to creat keys and import it in wallet:
+
 cleos wallet create_key
+
 cleos wallet create_key -n 'name'
 
 Keeps the keys
