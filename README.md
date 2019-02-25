@@ -31,6 +31,9 @@ To get logs :
 
 tail -f nodeos.log
 
+If it says replay required, kill nodeos and restart:
+pkill -9 nodeos
+
 Press ctrl+c to exit
 
 Do a curl to check the endpoint:
