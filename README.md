@@ -116,8 +116,7 @@ Example : cleos push action hello hi '["piyush"]' -p hello@active
 
 ** Multi Index Table **
 Creation : 
-` 
-struct [[eosio::table]] poll 
+` struct [[eosio::table]] poll 
 {
   uint64_t key; // primary key
   uint64_t pollId; // second key, can be non-unique
@@ -128,8 +127,7 @@ struct [[eosio::table]] poll
 
   uint64_t primary_key() const { return key; }
   uint64_t by_pollId() const {return pollId; }
-};
-`
+}; `
 
 
 
