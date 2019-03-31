@@ -114,10 +114,11 @@ cleos push action <account_name> <function_name> -p <account_name>@active
 Example : cleos push action hello hi '["piyush"]' -p hello@active
 
 
-** Multi Index Table **
-Creation : 
-```
+### Multi Index Table
 
+** Creation **  
+
+```
 struct [[eosio::table]] poll 
 {
   uint64_t key; // primary key
