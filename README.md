@@ -114,5 +114,20 @@ cleos push action <account_name> <function_name> -p <account_name>@active
 Example : cleos push action hello hi '["piyush"]' -p hello@active
 
 
+** Multi Index Table **
+Creation : 
+`struct [[eosio::table]] poll 
+{
+  uint64_t key; // primary key
+  uint64_t pollId; // second key, can be non-unique
+  std::string pollName; // name of poll
+  uint8_t pollStatus =0; // staus where 0 = closed, 1 = open, 2 = finished
+  std::string option; // the item you can vote for
+  uint32_t count =0; // the number of votes for each time
+
+  uint64_t primary_key() const { return key; }
+  uint64_t by_pollId() const {return pollId; }
+};`
+
 
 
