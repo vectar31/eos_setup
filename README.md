@@ -132,6 +132,11 @@ struct [[eosio::table]] poll
   uint64_t by_pollId() const {return pollId; }
 }; 
 ```
+Some points to remember :
+1. The attribute [[eosio::table]] is required for the EOSIO.CDT ABI generator, eosio-cpp, to recognise that you want to expose this table via the ABI and make it visible outside the smart contract.
+
+2. * The struct name is less than 12 characters and all in lower case. *
+
 
 
 
